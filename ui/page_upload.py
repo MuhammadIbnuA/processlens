@@ -193,39 +193,13 @@ def render_upload_page() -> None:
     st.subheader("Ekspor Log Kejadian")
     
     from core.import_log import export_event_log
-    import streamlit as st
     
     df = st.session_state["event_log"]
-    
-    # Use cached export functions to avoid recalculation
-    @st.cache_data(ttl=3600)  # Cache for 1 hour
-    def _get_csv_export(df_key):
-        df = st.session_state.get("event_log")  # Retrieve the actual dataframe
-        if df is not None:
-            return export_event_log(df, "csv")
-        return b"", "text/csv"
-    
-    @st.cache_data(ttl=3600)  # Cache for 1 hour
-    def _get_json_export(df_key):
-        df = st.session_state.get("event_log")
-        if df is not None:
-            return export_event_log(df, "json")
-        return b"", "application/json"
-    
-    @st.cache_data(ttl=3600)  # Cache for 1 hour
-    def _get_xlsx_export(df_key):
-        df = st.session_state.get("event_log")
-        if df is not None:
-            return export_event_log(df, "xlsx")
-        return b"", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-    
-    # Create a unique key based on dataframe properties to bust cache when df changes
-    df_key = f"export_{len(df)}_{df['case_id'].nunique()}_{df['activity'].nunique()}"
     
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        csv_data, csv_mime = _get_csv_export(df_key)
+        csv_data, csv_mime = export_event_log(df, "csv")
         st.download_button(
             label="Unduh CSV",
             data=csv_data,
@@ -235,7 +209,7 @@ def render_upload_page() -> None:
         )
     
     with col2:
-        json_data, json_mime = _get_json_export(df_key)
+        json_data, json_mime = export_event_log(df, "json")
         st.download_button(
             label="Unduh JSON",
             data=json_data,
@@ -245,7 +219,7 @@ def render_upload_page() -> None:
         )
     
     with col3:
-        xlsx_data, xlsx_mime = _get_xlsx_export(df_key)
+        xlsx_data, xlsx_mime = export_event_log(df, "xlsx")
         st.download_button(
             label="Unduh Excel",
             data=xlsx_data,
