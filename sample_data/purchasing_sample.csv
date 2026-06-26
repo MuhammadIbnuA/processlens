@@ -1,0 +1,301 @@
+case_id,activity,timestamp,resource,amount,department
+C001,Request Created,2024-03-18 10:14:00,Budi,771.52,IT
+C001,Manager Approval,2024-03-21 18:19:00,Farah,771.52,IT
+C001,Purchase Order Created,2024-03-23 18:20:00,Alice,771.52,IT
+C001,Vendor Confirmation,2024-03-25 21:34:00,Farah,771.52,IT
+C001,Goods Received,2024-03-31 05:46:00,Budi,771.52,IT
+C001,Invoice Received,2024-04-03 14:12:00,Alice,771.52,IT
+C001,Payment Completed,2024-04-07 21:49:00,Farah,771.52,IT
+C002,Request Created,2024-03-01 09:44:00,Dimas,20264.35,HR
+C002,Manager Approval,2024-03-02 14:50:00,Citra,20264.35,HR
+C002,Purchase Order Created,2024-03-03 20:56:00,Citra,20264.35,HR
+C002,Vendor Confirmation,2024-03-08 02:34:00,Budi,20264.35,HR
+C002,Goods Received,2024-03-17 03:20:00,Dimas,20264.35,HR
+C002,Invoice Received,2024-03-19 11:27:00,Citra,20264.35,HR
+C002,Payment Completed,2024-03-25 13:02:00,Citra,20264.35,HR
+C003,Request Created,2024-03-24 10:45:00,Alice,20760.71,HR
+C003,Manager Approval,2024-03-26 12:39:00,Alice,20760.71,HR
+C003,Purchase Order Created,2024-03-27 14:03:00,Farah,20760.71,HR
+C003,Vendor Confirmation,2024-03-31 21:43:00,Budi,20760.71,HR
+C003,Goods Received,2024-04-11 00:06:00,Alice,20760.71,HR
+C003,Invoice Received,2024-04-13 03:48:00,Farah,20760.71,HR
+C003,Payment Completed,2024-04-18 05:26:00,Alice,20760.71,HR
+C004,Request Created,2024-03-16 09:29:00,Dimas,13423.38,Finance
+C004,Manager Approval,2024-03-19 13:12:00,Citra,13423.38,Finance
+C004,Purchase Order Created,2024-03-21 13:26:00,Farah,13423.38,Finance
+C004,Vendor Confirmation,2024-03-23 18:51:00,Farah,13423.38,Finance
+C004,Goods Received,2024-04-01 20:04:00,Dimas,13423.38,Finance
+C004,Invoice Received,2024-04-05 01:17:00,Farah,13423.38,Finance
+C004,Payment Completed,2024-04-11 08:13:00,Citra,13423.38,Finance
+C005,Request Created,2024-03-09 10:47:00,Eka,3700.36,Operations
+C005,Manager Approval,2024-03-12 17:44:00,Eka,3700.36,Operations
+C005,Purchase Order Created,2024-03-14 22:58:00,Citra,3700.36,Operations
+C005,Vendor Confirmation,2024-03-18 07:29:00,Farah,3700.36,Operations
+C005,Goods Received,2024-03-24 08:24:00,Eka,3700.36,Operations
+C005,Invoice Received,2024-03-25 11:04:00,Citra,3700.36,Operations
+C005,Payment Completed,2024-03-29 17:42:00,Eka,3700.36,Operations
+C006,Request Created,2024-03-30 15:16:00,Eka,9711.47,IT
+C006,Manager Approval,2024-04-01 00:04:00,Alice,9711.47,IT
+C006,Purchase Order Created,2024-04-03 05:11:00,Farah,9711.47,IT
+C006,Vendor Confirmation,2024-04-07 11:21:00,Farah,9711.47,IT
+C006,Goods Received,2024-04-19 12:07:00,Eka,9711.47,IT
+C006,Invoice Received,2024-04-22 16:39:00,Farah,9711.47,IT
+C006,Payment Completed,2024-04-27 01:37:00,Alice,9711.47,IT
+C007,Request Created,2024-03-20 15:38:00,Budi,21782.39,IT
+C007,Manager Approval,2024-03-24 00:36:00,Budi,21782.39,IT
+C007,Purchase Order Created,2024-03-25 06:07:00,Citra,21782.39,IT
+C007,Vendor Confirmation,2024-03-27 08:06:00,Budi,21782.39,IT
+C007,Goods Received,2024-04-06 12:21:00,Budi,21782.39,IT
+C007,Invoice Received,2024-04-07 16:17:00,Citra,21782.39,IT
+C007,Payment Completed,2024-04-14 17:22:00,Budi,21782.39,IT
+C008,Request Created,2024-03-09 09:42:00,Dimas,20428.18,Operations
+C008,Manager Approval,2024-03-12 15:55:00,Eka,20428.18,Operations
+C008,Purchase Order Created,2024-03-13 20:20:00,Budi,20428.18,Operations
+C008,Vendor Confirmation,2024-03-18 04:17:00,Citra,20428.18,Operations
+C008,Goods Received,2024-03-30 05:32:00,Dimas,20428.18,Operations
+C008,Invoice Received,2024-03-31 06:53:00,Budi,20428.18,Operations
+C008,Payment Completed,2024-04-03 15:07:00,Eka,20428.18,Operations
+C009,Request Created,2024-03-05 07:14:00,Alice,5622.4,Academic
+C009,Manager Approval,2024-03-08 10:31:00,Alice,5622.4,Academic
+C009,Purchase Order Created,2024-03-10 14:05:00,Citra,5622.4,Academic
+C009,Vendor Confirmation,2024-03-13 21:20:00,Alice,5622.4,Academic
+C009,Goods Received,2024-03-26 03:32:00,Alice,5622.4,Academic
+C009,Invoice Received,2024-03-27 05:14:00,Citra,5622.4,Academic
+C009,Payment Completed,2024-04-02 10:41:00,Alice,5622.4,Academic
+C010,Request Created,2024-03-04 08:03:00,Dimas,11755.56,Operations
+C010,Manager Approval,2024-03-05 11:15:00,Farah,11755.56,Operations
+C010,Purchase Order Created,2024-03-07 13:42:00,Citra,11755.56,Operations
+C010,Vendor Confirmation,2024-03-10 18:11:00,Alice,11755.56,Operations
+C010,Goods Received,2024-03-18 19:39:00,Dimas,11755.56,Operations
+C010,Invoice Received,2024-03-21 20:42:00,Citra,11755.56,Operations
+C010,Payment Completed,2024-03-28 20:47:00,Farah,11755.56,Operations
+C011,Request Created,2024-04-01 14:13:00,Dimas,4282.83,Finance
+C011,Manager Approval,2024-04-02 20:29:00,Alice,4282.83,Finance
+C011,Purchase Order Created,2024-04-05 00:56:00,Budi,4282.83,Finance
+C011,Vendor Confirmation,2024-04-10 03:08:00,Dimas,4282.83,Finance
+C011,Goods Received,2024-04-19 06:11:00,Dimas,4282.83,Finance
+C011,Invoice Received,2024-04-22 14:14:00,Budi,4282.83,Finance
+C011,Payment Completed,2024-04-27 14:17:00,Alice,4282.83,Finance
+C012,Request Created,2024-03-11 07:32:00,Alice,11998.19,Academic
+C012,Manager Approval,2024-03-12 10:57:00,Budi,11998.19,Academic
+C012,Purchase Order Created,2024-03-13 14:34:00,Alice,11998.19,Academic
+C012,Vendor Confirmation,2024-03-15 16:00:00,Eka,11998.19,Academic
+C012,Goods Received,2024-03-25 20:13:00,Alice,11998.19,Academic
+C012,Invoice Received,2024-03-29 01:28:00,Alice,11998.19,Academic
+C012,Payment Completed,2024-04-03 07:36:00,Budi,11998.19,Academic
+C013,Request Created,2024-03-05 07:29:00,Eka,11512.03,HR
+C013,Manager Approval,2024-03-08 11:01:00,Eka,11512.03,HR
+C013,Purchase Order Created,2024-03-10 14:00:00,Alice,11512.03,HR
+C013,Vendor Confirmation,2024-03-14 15:56:00,Alice,11512.03,HR
+C013,Goods Received,2024-03-22 21:14:00,Eka,11512.03,HR
+C013,Invoice Received,2024-03-24 05:07:00,Alice,11512.03,HR
+C013,Payment Completed,2024-03-31 09:46:00,Eka,11512.03,HR
+C014,Request Created,2024-03-20 08:56:00,Budi,344.4,Academic
+C014,Manager Approval,2024-03-23 17:05:00,Citra,344.4,Academic
+C014,Purchase Order Created,2024-03-25 21:43:00,Alice,344.4,Academic
+C014,Vendor Confirmation,2024-03-29 02:56:00,Alice,344.4,Academic
+C014,Goods Received,2024-04-07 11:27:00,Budi,344.4,Academic
+C014,Invoice Received,2024-04-09 11:32:00,Alice,344.4,Academic
+C014,Payment Completed,2024-04-15 15:34:00,Citra,344.4,Academic
+C015,Request Created,2024-03-09 11:10:00,Farah,8438.88,IT
+C015,Manager Approval,2024-03-11 19:10:00,Dimas,8438.88,IT
+C015,Purchase Order Created,2024-03-12 21:06:00,Eka,8438.88,IT
+C015,Vendor Confirmation,2024-03-16 05:08:00,Farah,8438.88,IT
+C015,Goods Received,2024-03-26 13:17:00,Farah,8438.88,IT
+C015,Invoice Received,2024-03-28 15:19:00,Eka,8438.88,IT
+C015,Payment Completed,2024-04-02 21:16:00,Dimas,8438.88,IT
+C016,Request Created,2024-03-14 10:42:00,Alice,22488.28,IT
+C016,Manager Approval,2024-03-17 13:41:00,Citra,22488.28,IT
+C016,Purchase Order Created,2024-03-18 16:32:00,Eka,22488.28,IT
+C016,Vendor Confirmation,2024-03-21 22:33:00,Dimas,22488.28,IT
+C016,Goods Received,2024-03-29 04:23:00,Alice,22488.28,IT
+C016,Invoice Received,2024-03-31 07:40:00,Eka,22488.28,IT
+C016,Payment Completed,2024-04-04 09:04:00,Citra,22488.28,IT
+C017,Request Created,2024-03-15 10:52:00,Dimas,21486.04,IT
+C017,Manager Approval,2024-03-16 11:34:00,Citra,21486.04,IT
+C017,Purchase Order Created,2024-03-17 17:55:00,Citra,21486.04,IT
+C017,Vendor Confirmation,2024-03-21 19:44:00,Budi,21486.04,IT
+C017,Goods Received,2024-03-31 01:25:00,Dimas,21486.04,IT
+C017,Invoice Received,2024-04-03 08:08:00,Citra,21486.04,IT
+C017,Payment Completed,2024-04-10 13:09:00,Citra,21486.04,IT
+C018,Request Created,2024-03-17 09:37:00,Citra,21944.4,IT
+C018,Manager Approval,2024-03-19 15:23:00,Alice,21944.4,IT
+C018,Purchase Order Created,2024-03-21 22:01:00,Alice,21944.4,IT
+C018,Vendor Confirmation,2024-03-24 04:58:00,Eka,21944.4,IT
+C018,Goods Received,2024-04-01 09:00:00,Citra,21944.4,IT
+C018,Invoice Received,2024-04-04 15:00:00,Alice,21944.4,IT
+C018,Payment Completed,2024-04-11 23:43:00,Alice,21944.4,IT
+C019,Request Created,2024-03-05 12:39:00,Citra,9200.9,Finance
+C019,Manager Approval,2024-03-07 20:58:00,Farah,9200.9,Finance
+C019,Purchase Order Created,2024-03-10 02:23:00,Alice,9200.9,Finance
+C019,Vendor Confirmation,2024-03-14 10:31:00,Farah,9200.9,Finance
+C019,Goods Received,2024-03-22 17:13:00,Citra,9200.9,Finance
+C019,Invoice Received,2024-03-24 19:52:00,Alice,9200.9,Finance
+C019,Payment Completed,2024-04-01 00:17:00,Farah,9200.9,Finance
+C020,Request Created,2024-03-20 11:13:00,Dimas,20868.07,Academic
+C020,Manager Approval,2024-03-22 18:41:00,Eka,20868.07,Academic
+C020,Purchase Order Created,2024-03-24 22:13:00,Eka,20868.07,Academic
+C020,Vendor Confirmation,2024-03-30 00:55:00,Farah,20868.07,Academic
+C020,Goods Received,2024-04-05 05:27:00,Dimas,20868.07,Academic
+C020,Invoice Received,2024-04-08 10:32:00,Eka,20868.07,Academic
+C020,Payment Completed,2024-04-12 14:46:00,Eka,20868.07,Academic
+C021,Request Created,2024-03-03 10:30:00,Eka,3811.75,Finance
+C021,Manager Approval,2024-03-06 14:15:00,Alice,3811.75,Finance
+C021,Purchase Order Created,2024-03-08 21:40:00,Dimas,3811.75,Finance
+C021,Vendor Confirmation,2024-03-12 00:21:00,Dimas,3811.75,Finance
+C021,Goods Received,2024-03-17 02:10:00,Eka,3811.75,Finance
+C021,Invoice Received,2024-03-19 05:21:00,Dimas,3811.75,Finance
+C021,Payment Completed,2024-03-26 12:24:00,Alice,3811.75,Finance
+C022,Request Created,2024-03-08 14:08:00,Dimas,6342.58,Academic
+C022,Manager Approval,2024-03-11 19:56:00,Farah,6342.58,Academic
+C022,Purchase Order Created,2024-03-14 04:23:00,Eka,6342.58,Academic
+C022,Vendor Confirmation,2024-03-19 07:10:00,Eka,6342.58,Academic
+C022,Goods Received,2024-03-31 14:26:00,Dimas,6342.58,Academic
+C022,Invoice Received,2024-04-01 19:15:00,Eka,6342.58,Academic
+C022,Payment Completed,2024-04-09 02:55:00,Farah,6342.58,Academic
+C023,Request Created,2024-03-05 11:15:00,Citra,6973.75,Finance
+C023,Manager Approval,2024-03-06 13:24:00,Citra,6973.75,Finance
+C023,Purchase Order Created,2024-03-07 20:08:00,Citra,6973.75,Finance
+C023,Vendor Confirmation,2024-03-10 23:12:00,Eka,6973.75,Finance
+C023,Goods Received,2024-03-22 05:33:00,Citra,6973.75,Finance
+C023,Invoice Received,2024-03-25 12:59:00,Citra,6973.75,Finance
+C023,Payment Completed,2024-03-28 16:52:00,Citra,6973.75,Finance
+C024,Request Created,2024-03-02 13:30:00,Alice,9828.5,Operations
+C024,Manager Approval,2024-03-04 22:17:00,Citra,9828.5,Operations
+C024,Purchase Order Created,2024-03-06 05:31:00,Citra,9828.5,Operations
+C024,Vendor Confirmation,2024-03-10 12:02:00,Dimas,9828.5,Operations
+C024,Goods Received,2024-03-15 18:23:00,Alice,9828.5,Operations
+C024,Invoice Received,2024-03-19 01:09:00,Citra,9828.5,Operations
+C024,Payment Completed,2024-03-23 09:07:00,Citra,9828.5,Operations
+C025,Request Created,2024-03-18 07:58:00,Dimas,24520.94,Finance
+C025,Manager Approval,2024-03-19 09:39:00,Eka,24520.94,Finance
+C025,Request Revised,2024-03-21 12:34:00,Dimas,23957.43,Finance
+C025,Manager Approval,2024-03-22 16:58:00,Eka,23957.43,Finance
+C025,Purchase Order Created,2024-03-24 20:27:00,Eka,23957.43,Finance
+C025,Vendor Confirmation,2024-03-29 02:15:00,Farah,23957.43,Finance
+C025,Goods Received,2024-04-09 07:03:00,Dimas,23957.43,Finance
+C025,Invoice Received,2024-04-11 11:56:00,Eka,23957.43,Finance
+C025,Payment Completed,2024-04-14 18:57:00,Eka,23957.43,Finance
+C026,Request Created,2024-03-12 10:41:00,Alice,1444.33,Academic
+C026,Manager Approval,2024-03-13 14:34:00,Farah,1444.33,Academic
+C026,Request Revised,2024-03-14 16:49:00,Alice,1120.41,Academic
+C026,Manager Approval,2024-03-17 18:25:00,Farah,1120.41,Academic
+C026,Purchase Order Created,2024-03-19 02:09:00,Alice,1120.41,Academic
+C026,Vendor Confirmation,2024-03-23 07:19:00,Alice,1120.41,Academic
+C026,Goods Received,2024-03-29 09:38:00,Alice,1120.41,Academic
+C026,Invoice Received,2024-03-30 10:37:00,Alice,1120.41,Academic
+C026,Payment Completed,2024-04-04 17:02:00,Farah,1120.41,Academic
+C027,Request Created,2024-03-23 10:06:00,Farah,2038.51,Finance
+C027,Manager Approval,2024-03-24 10:28:00,Citra,2038.51,Finance
+C027,Request Revised,2024-03-26 15:32:00,Farah,2045.8,Finance
+C027,Manager Approval,2024-03-28 16:26:00,Citra,2045.8,Finance
+C027,Purchase Order Created,2024-03-30 23:32:00,Farah,2045.8,Finance
+C027,Vendor Confirmation,2024-04-05 05:12:00,Eka,2045.8,Finance
+C027,Goods Received,2024-04-17 07:39:00,Farah,2045.8,Finance
+C027,Invoice Received,2024-04-18 16:20:00,Farah,2045.8,Finance
+C027,Payment Completed,2024-04-24 01:09:00,Citra,2045.8,Finance
+C028,Request Created,2024-03-24 11:20:00,Budi,11702.11,Operations
+C028,Manager Approval,2024-03-25 18:56:00,Alice,11702.11,Operations
+C028,Request Revised,2024-03-27 23:57:00,Budi,11662.13,Operations
+C028,Manager Approval,2024-03-30 02:28:00,Alice,11662.13,Operations
+C028,Purchase Order Created,2024-03-31 08:19:00,Citra,11662.13,Operations
+C028,Vendor Confirmation,2024-04-04 13:36:00,Dimas,11662.13,Operations
+C028,Goods Received,2024-04-13 21:36:00,Budi,11662.13,Operations
+C028,Invoice Received,2024-04-17 00:41:00,Citra,11662.13,Operations
+C028,Payment Completed,2024-04-21 07:12:00,Alice,11662.13,Operations
+C029,Request Created,2024-03-23 14:41:00,Farah,18990.39,Academic
+C029,Manager Approval,2024-03-24 18:55:00,Dimas,18990.39,Academic
+C029,Request Revised,2024-03-26 22:14:00,Farah,20858.59,Academic
+C029,Manager Approval,2024-03-29 05:49:00,Dimas,20858.59,Academic
+C029,Purchase Order Created,2024-03-31 12:36:00,Dimas,20858.59,Academic
+C029,Vendor Confirmation,2024-04-04 18:20:00,Alice,20858.59,Academic
+C029,Goods Received,2024-04-16 22:39:00,Farah,20858.59,Academic
+C029,Invoice Received,2024-04-19 01:46:00,Dimas,20858.59,Academic
+C029,Payment Completed,2024-04-23 06:53:00,Dimas,20858.59,Academic
+C030,Request Created,2024-03-23 09:12:00,Budi,23779.31,Academic
+C030,Manager Approval,2024-03-26 17:50:00,Farah,23779.31,Academic
+C030,Request Revised,2024-03-28 19:43:00,Budi,19415.11,Academic
+C030,Manager Approval,2024-03-30 00:54:00,Farah,19415.11,Academic
+C030,Purchase Order Created,2024-04-01 01:39:00,Dimas,19415.11,Academic
+C030,Vendor Confirmation,2024-04-04 05:41:00,Citra,19415.11,Academic
+C030,Goods Received,2024-04-09 13:59:00,Budi,19415.11,Academic
+C030,Invoice Received,2024-04-12 16:39:00,Dimas,19415.11,Academic
+C030,Payment Completed,2024-04-18 18:34:00,Farah,19415.11,Academic
+C031,Request Created,2024-03-16 14:28:00,Citra,14415.5,IT
+C031,Manager Approval,2024-03-18 16:20:00,Budi,14415.5,IT
+C031,Request Revised,2024-03-19 22:51:00,Citra,10731.61,IT
+C031,Manager Approval,2024-03-22 23:00:00,Budi,10731.61,IT
+C031,Purchase Order Created,2024-03-24 03:05:00,Alice,10731.61,IT
+C031,Vendor Confirmation,2024-03-27 04:40:00,Citra,10731.61,IT
+C031,Goods Received,2024-04-07 08:29:00,Citra,10731.61,IT
+C031,Invoice Received,2024-04-10 14:57:00,Alice,10731.61,IT
+C031,Payment Completed,2024-04-16 19:52:00,Budi,10731.61,IT
+C032,Request Created,2024-03-10 07:39:00,Farah,24752.28,Academic
+C032,Manager Approval,2024-03-11 12:21:00,Alice,24752.28,Academic
+C032,Request Revised,2024-03-12 14:36:00,Farah,19907.96,Academic
+C032,Manager Approval,2024-03-13 16:36:00,Alice,19907.96,Academic
+C032,Purchase Order Created,2024-03-16 00:20:00,Budi,19907.96,Academic
+C032,Vendor Confirmation,2024-03-21 04:22:00,Farah,19907.96,Academic
+C032,Goods Received,2024-03-29 09:07:00,Farah,19907.96,Academic
+C032,Invoice Received,2024-03-31 16:11:00,Budi,19907.96,Academic
+C032,Payment Completed,2024-04-04 21:01:00,Alice,19907.96,Academic
+C033,Request Created,2024-03-07 13:07:00,Eka,16580.4,Academic
+C033,Manager Approval,2024-03-09 15:11:00,Budi,16580.4,Academic
+C033,Request Revised,2024-03-10 18:01:00,Eka,14666.48,Academic
+C033,Manager Approval,2024-03-13 22:29:00,Budi,14666.48,Academic
+C033,Purchase Order Created,2024-03-15 06:13:00,Farah,14666.48,Academic
+C033,Vendor Confirmation,2024-03-19 12:30:00,Budi,14666.48,Academic
+C033,Goods Received,2024-03-31 19:35:00,Eka,14666.48,Academic
+C033,Invoice Received,2024-04-03 20:31:00,Farah,14666.48,Academic
+C033,Payment Completed,2024-04-10 02:09:00,Budi,14666.48,Academic
+C034,Request Created,2024-03-08 07:48:00,Farah,792.74,HR
+C034,Manager Approval,2024-03-09 15:21:00,Citra,792.74,HR
+C034,Request Revised,2024-03-11 19:32:00,Farah,1029.11,HR
+C034,Manager Approval,2024-03-14 02:37:00,Citra,1029.11,HR
+C034,Purchase Order Created,2024-03-16 08:03:00,Eka,1029.11,HR
+C034,Vendor Confirmation,2024-03-20 13:45:00,Alice,1029.11,HR
+C034,Goods Received,2024-03-26 16:06:00,Farah,1029.11,HR
+C034,Invoice Received,2024-03-28 23:24:00,Eka,1029.11,HR
+C034,Payment Completed,2024-04-04 07:26:00,Citra,1029.11,HR
+C035,Request Created,2024-03-05 12:07:00,Dimas,2338.29,Operations
+C035,Manager Approval,2024-03-07 18:10:00,Eka,2338.29,Operations
+C035,Purchase Order Created,2024-03-25 02:33:00,Alice,2338.29,Operations
+C035,Vendor Confirmation,2024-03-30 10:21:00,Farah,2338.29,Operations
+C035,Goods Received,2024-04-04 13:38:00,Dimas,2338.29,Operations
+C035,Invoice Received,2024-04-07 16:37:00,Alice,2338.29,Operations
+C035,Payment Completed,2024-04-12 00:33:00,Eka,2338.29,Operations
+C036,Request Created,2024-03-11 10:45:00,Budi,3167.44,Operations
+C036,Manager Approval,2024-03-13 11:59:00,Citra,3167.44,Operations
+C036,Purchase Order Created,2024-03-28 19:06:00,Eka,3167.44,Operations
+C036,Vendor Confirmation,2024-04-01 03:05:00,Alice,3167.44,Operations
+C036,Goods Received,2024-04-11 07:37:00,Budi,3167.44,Operations
+C036,Invoice Received,2024-04-14 12:03:00,Eka,3167.44,Operations
+C036,Payment Completed,2024-04-18 19:18:00,Citra,3167.44,Operations
+C037,Request Created,2024-03-07 10:58:00,Eka,13848.94,Operations
+C037,Manager Approval,2024-03-08 15:47:00,Eka,13848.94,Operations
+C037,Purchase Order Created,2024-03-28 21:46:00,Farah,13848.94,Operations
+C037,Vendor Confirmation,2024-04-01 22:04:00,Budi,13848.94,Operations
+C037,Goods Received,2024-04-12 02:57:00,Eka,13848.94,Operations
+C037,Invoice Received,2024-04-15 10:52:00,Farah,13848.94,Operations
+C037,Payment Completed,2024-04-18 18:26:00,Eka,13848.94,Operations
+C038,Request Created,2024-03-09 15:24:00,Dimas,8726.33,Operations
+C038,Manager Approval,2024-03-10 21:38:00,Citra,8726.33,Operations
+C038,Purchase Order Created,2024-03-30 21:58:00,Budi,8726.33,Operations
+C038,Vendor Confirmation,2024-04-05 04:22:00,Farah,8726.33,Operations
+C038,Goods Received,2024-04-15 06:53:00,Dimas,8726.33,Operations
+C038,Invoice Received,2024-04-16 09:25:00,Budi,8726.33,Operations
+C038,Payment Completed,2024-04-21 15:20:00,Citra,8726.33,Operations
+C039,Request Created,2024-03-08 08:33:00,Dimas,21873.63,IT
+C039,Manager Approval,2024-03-10 10:37:00,Alice,21873.63,IT
+C039,Purchase Order Created,2024-03-31 14:58:00,Farah,21873.63,IT
+C039,Vendor Confirmation,2024-04-05 16:52:00,Budi,21873.63,IT
+C039,Goods Received,2024-04-13 01:16:00,Dimas,21873.63,IT
+C039,Invoice Received,2024-04-15 09:11:00,Farah,21873.63,IT
+C039,Payment Completed,2024-04-20 09:50:00,Alice,21873.63,IT
+C040,Request Created,2024-03-11 11:14:00,Farah,5984.04,IT
+C040,Manager Approval,2024-03-12 18:24:00,Alice,5984.04,IT
+C040,Purchase Order Created,2024-04-06 23:21:00,Dimas,5984.04,IT
+C040,Vendor Confirmation,2024-04-08 23:41:00,Alice,5984.04,IT
+C040,Goods Received,2024-04-14 04:03:00,Farah,5984.04,IT
+C040,Invoice Received,2024-04-16 10:12:00,Dimas,5984.04,IT
+C040,Payment Completed,2024-04-19 18:38:00,Alice,5984.04,IT

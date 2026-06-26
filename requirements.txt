@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+plotly
+networkx
+python-dateutil
+graphviz
+openpyxl
+openpyxl
