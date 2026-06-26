@@ -510,7 +510,7 @@ def render_dot_to_svg(dot: str) -> str:
         from graphviz.backend.execute import ExecutableNotFound
     except ImportError as exc:
         raise RuntimeError(
-            "Graphviz belum terpasang atau perintah dot tidak ditemukan di PATH."
+            "Modul Python graphviz belum terpasang. Install dengan: pip install graphviz"
         ) from exc
 
     src = Source(dot)
@@ -518,11 +518,15 @@ def render_dot_to_svg(dot: str) -> str:
         svg_bytes = src.pipe(format="svg")
     except ExecutableNotFound as exc:
         raise RuntimeError(
-            "Graphviz belum terpasang atau perintah dot tidak ditemukan di PATH."
+            "Binary Graphviz 'dot' tidak ditemukan di sistem. "
+            "Ini normal di lingkungan cloud seperti Streamlit Cloud. "
+            "Gunakan renderer standar Streamlit untuk render peta proses."
         ) from exc
     except FileNotFoundError as exc:
         raise RuntimeError(
-            "Graphviz belum terpasang atau perintah dot tidak ditemukan di PATH."
+            "Binary Graphviz 'dot' tidak ditemukan di sistem. "
+            "Ini normal di lingkungan cloud seperti Streamlit Cloud. "
+            "Gunakan renderer standar Streamlit untuk render peta proses."
         ) from exc
 
     svg = svg_bytes.decode("utf-8", errors="replace")
