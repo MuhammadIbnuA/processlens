@@ -101,7 +101,7 @@ def render_cases_page() -> None:
             )
             fig.update_traces(
                 marker=dict(size=14, color="#4A90D9"),
-                textposition="top_center",
+                textposition="top center",
             )
             fig.update_layout(
                 xaxis_title="Waktu Kejadian",
