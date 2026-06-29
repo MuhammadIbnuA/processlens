@@ -14,6 +14,45 @@ import streamlit as st
 from core.report import generate_markdown_report
 from ui.learning_mode import render_page_learning_content
 
+EXCEL_MAX_CELL_LENGTH = 32000  # Leave some buffer below the 32767 limit
+
+
+def _truncate_long_cells_for_excel(df: pd.DataFrame) -> pd.DataFrame:
+    """Truncate cells with content longer than Excel's cell limit.
+    
+    Excel has a hard limit of 32767 characters per cell. This function
+    safely truncates cells longer than the limit and appends a marker
+    to indicate data was truncated.
+    
+    Parameters
+    ----------
+    df : pd.DataFrame
+        DataFrame to process
+        
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame with long cells truncated
+    """
+    df_copy = df.copy()
+    
+    # Process all object/string columns
+    for col in df_copy.columns:
+        if df_copy[col].dtype == "object":
+            # Convert to string and check length
+            mask = df_copy[col].apply(
+                lambda x: isinstance(x, str) and len(x) > EXCEL_MAX_CELL_LENGTH
+            )
+            
+            if mask.any():
+                # Truncate long cells and add indicator
+                truncated_values = df_copy.loc[mask, col].apply(
+                    lambda x: x[:EXCEL_MAX_CELL_LENGTH - 15] + " ... [TRUNCATED]" if isinstance(x, str) and len(x) > EXCEL_MAX_CELL_LENGTH else x
+                )
+                df_copy.loc[mask, col] = truncated_values
+    
+    return df_copy
+
 
 def render_report_page() -> None:
     """Render the process-mining report page with progress indicators and additional export formats."""
@@ -95,7 +134,9 @@ def render_report_page() -> None:
                 activity_stats.to_excel(writer, sheet_name='Activity_Stats', index=False)
                 resource_stats.to_excel(writer, sheet_name='Resource_Stats', index=False)
                 case_durations.to_excel(writer, sheet_name='Case_Durations', index=False)
-                variants.to_excel(writer, sheet_name='Variants', index=False)
+                # Truncate long cells in variants dataframe to avoid Excel cell limit (32767 chars)
+                variants_truncated = _truncate_long_cells_for_excel(variants.copy())
+                variants_truncated.to_excel(writer, sheet_name='Variants', index=False)
             
             excel_data = buffer.getvalue()
             st.download_button(

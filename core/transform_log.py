@@ -39,7 +39,10 @@ def prepare_event_log(df: pd.DataFrame) -> pd.DataFrame:
     out["activity"] = out["activity"].astype(str)
     out["resource"] = out["resource"].astype(str)
 
-    out["timestamp"] = pd.to_datetime(out["timestamp"], errors="coerce")
+    # Parse timestamps with robust format detection to avoid pandas warnings
+    # Use the same robust parser as in import_log to maintain consistency
+    from core.import_log import _robust_parse_timestamps
+    out["timestamp"] = _robust_parse_timestamps(out["timestamp"])
 
     out = out.sort_values(["case_id", "timestamp"]).reset_index(drop=True)
 

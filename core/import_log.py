@@ -42,7 +42,6 @@ def read_csv_file(uploaded_file: str | IO, chunksize: int | None = None) -> pd.D
         raise ValueError(f"Could not read CSV file: {exc}") from exc
     return df
 
-
 def get_column_names(df: pd.DataFrame) -> list[str]:
     """Return the column names of a DataFrame.
 
@@ -57,8 +56,42 @@ def get_column_names(df: pd.DataFrame) -> list[str]:
     """
     return list(df.columns)
 
-
 INTERNAL_COLUMNS = ("case_id", "activity", "timestamp", "resource")
+
+def _robust_parse_timestamps(timestamp_series: pd.Series) -> pd.Series:
+    """Robustly parse timestamps with explicit format detection to avoid pandas warnings.
+    
+    First tries explicit DD/MM/YYYY formats, then falls back to dayfirst=True,
+    and finally generic parsing. This eliminates pandas warnings about ambiguous
+    date formats while maintaining backward compatibility.
+    """
+    # Try explicit DD/MM/YYYY HH:MM format first
+    parsed = pd.to_datetime(timestamp_series, format="%d/%m/%Y %H:%M", errors="coerce")
+    
+    # If there are still NaT values, try DD/MM/YYYY HH:MM:SS format
+    na_mask = parsed.isna()
+    if na_mask.any():
+        # Update only the NaT values
+        subset = timestamp_series[na_mask]
+        parsed_update = pd.to_datetime(subset, format="%d/%m/%Y %H:%M:%S", errors="coerce")
+        parsed = parsed.mask(na_mask, parsed_update)
+        
+        # Update mask again
+        na_mask = parsed.isna()
+        if na_mask.any():
+            # Try dayfirst=True as fallback
+            subset = timestamp_series[na_mask]
+            parsed_update = pd.to_datetime(subset, dayfirst=True, errors="coerce")
+            parsed = parsed.mask(na_mask, parsed_update)
+            
+            # Final fallback to generic parsing
+            na_mask = parsed.isna()
+            if na_mask.any():
+                subset = timestamp_series[na_mask]
+                parsed_update = pd.to_datetime(subset, errors="coerce")
+                parsed = parsed.mask(na_mask, parsed_update)
+    
+    return parsed
 
 def export_event_log(df: pd.DataFrame, format: str = "csv", filename: str = "event_log") -> tuple[bytes, str]:
     """Export event log to various formats.
@@ -92,7 +125,6 @@ def export_event_log(df: pd.DataFrame, format: str = "csv", filename: str = "eve
         return buffer.getvalue(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     else:
         raise ValueError(f"Unsupported format: {format}. Supported formats: csv, json, xlsx")
-
 
 def map_event_log_columns(
     df: pd.DataFrame,
@@ -180,8 +212,9 @@ def map_event_log_columns(
             target = f"attr_{col}"
         mapped[target] = df[col].values
 
-    # Parse timestamps
-    mapped["timestamp"] = pd.to_datetime(mapped["timestamp"], errors="coerce")
+    # Parse timestamps with robust format detection
+    # Explicitly handle DD/MM/YYYY format to avoid pandas warnings
+    mapped["timestamp"] = _robust_parse_timestamps(mapped["timestamp"])
 
     # Sort and reset index
     mapped = mapped.sort_values(["case_id", "timestamp"]).reset_index(drop=True)
